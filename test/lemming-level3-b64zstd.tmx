@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.5" tiledversion="1.5.0" orientation="orthogonal" renderorder="right-down" width="200" height="70" tilewidth="16" tileheight="16" infinite="0" nextlayerid="5" nextobjectid="8">
+ <properties>
+  <property name="bg_art" value="background.png"/>
+  <property name="bg_music" value="music/silly.mp3"/>
+  <property name="fg_art" value="hill.png"/>
+ </properties>
+ <tileset firstgid="1" source="tiles.tsx"/>
+ <layer id="1" name="Main" width="200" height="70">
+  <data encoding="base64" compression="zstd">
+   KLUv/WDA2YUQABKHDZggEQYjETQBACAAEhAAZ/kH0mPg/6c4/8sTkSCY4qRSJAOZWmutJKi1EuMsXSIYYovZ3d0dCYD8qDB9wAImSUGSDhJAEFiBIIAgYBA4BA1GgBAgBAlG0BAwBAjEYiSNUboOBz2P4vgbTak8w2uyriYvDxNi8wLoTkYFzWv6WVlWIi/nc7JFVF5Tuks6xHmde8LrJG0rXleRV7pXEFi0e9pBnG+Tdi9z0x4tlzh9BMDFBKTdLMNp5zKKdqGM0K7LCO1YGaQdlUHazTJIu1/G0w5lGO1UGYq2d25WDOoIinu47eOcW8BIu1q7fIt1YsUtm1gWie2xhN04chHf4CdmOVfrKy3tdZ+7XnzTjGVRqSEzuNc97mplWUqTN/2buwOd29fKllk9NyzMC9hTMg+AUQEQrgM8OgDCVYCPBkC4CnDRC1g7gUVOgCw3+X2Bn1ICQfFDL0l8J8yiFX06zQR8ukFSZqHsQLos2hnxwYk4KP9nkvl1tIkO4k/xgyXkaljkUjBtPApoLoyHXAvSxkcBzYXzkktB2rgooLlwXnIpQBsXBqQvZCGPIacFtHNRRnPhPORSgDYuCmgunIdcCtDG8ouCr2ipiTZ1DwlOXRoUjPapksut7zOFvbJgudKgHm1VeM+KPm3Uog2LBzRWn7YoHtO8Jm2+eJmG+mir4htN16INioc0Vp+2LB7TPEGnKA==
+  </data>
+ </layer>
+ <layer id="2" name="Ladders" width="200" height="70">
+  <data encoding="base64" compression="zstd">
+   KLUv/WDA2bUAABgADAAEAJ0M2KEPHil2sBFUyKf0jg0=
+  </data>
+ </layer>
+ <objectgroup id="3" name="Object Layer 1">
+  <object id="1" name="Start Point" type="StartPoint" x="160" y="656" width="80" height="64"/>
+  <object id="2" name="bridge" type="Bridge" x="928" y="336" width="96" height="96">
+   <properties>
+    <property name="button_id" value="bridge"/>
+    <property name="down_img" value="bridge_down.png"/>
+    <property name="state" value="up"/>
+    <property name="up_img" value="bridge_up.png"/>
+   </properties>
+  </object>
+  <object id="3" type="Button" gid="14" x="704" y="96" width="16" height="16">
+   <properties>
+    <property name="button_id" value="bridge"/>
+    <property name="delay" value="2"/>
+    <property name="down_img" value="button_down.png"/>
+    <property name="up_img" value="button_up.png"/>
+   </properties>
+  </object>
+  <object id="4" name="winnar" type="Victory" x="0" y="288" width="160" height="112"/>
+  <object id="5" name="winnar sign" type="Decoration" x="48" y="368" width="80" height="32">
+   <properties>
+    <property name="img" value="winnar.png"/>
+   </properties>
+  </object>
+  <object id="6" type="Decoration" x="448" y="688" width="80" height="32">
+   <properties>
+    <property name="img" value="skull_sign.png"/>
+   </properties>
+  </object>
+  <object id="7" name="monster" type="Agent" x="1440" y="672" width="48" height="48">
+   <properties>
+    <property name="direction" value="-1"/>
+    <property name="type" value="monster"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup id="4" name="PlayerLayer" visible="0"/>
+</map>

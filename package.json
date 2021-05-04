@@ -1,0 +1,35 @@
+{
+  "name": "tmx-parser",
+  "version": "0.1.0",
+  "description": "parse and load tiled maps",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "/dist"
+  ],
+  "scripts": {
+    "test": "mocha --reporter spec test/test.js",
+    "test-debug": "mocha --inspect-brk test/test.js",
+    "build": "tsc --declaration"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/superjoe30/node-tmx-parser.git"
+  },
+  "author": "Andrew Kelley <superjoe30@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/superjoe30/node-tmx-parser/issues"
+  },
+  "dependencies": {
+    "pend": "~1.2.0",
+    "sax": "~1.1.2",
+    "zstd-codec": "^0.1.2"
+  },
+  "devDependencies": {
+    "@types/node": "^14.14.41",
+    "mocha": "^8.3.2",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.2.4"
+  }
+}
